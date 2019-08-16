@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+	<script src="form1.js"></script>
+	<script src="amt.js"></script>
+	<h2 id="p1" align="center">Update Your details</h2>
+	<style>
+	#p1 {
+	color: rgb(20, 20, 180);
+	}
+	
+	.content {
+	max-width: 800px;
+	margin: auto;
+	}
+	
+	tr.bordered {
+	border-bottom: 1px solid #000;
+	}
+	
+	input {
+	line-height: 180%;
+	border-bottom-style: solid;
+	diplay: block;
+	}
+	
+	body,
+	html {
+	height: 100%;
+	margin: 0;
+	}
+	</style>
+	</head>
+	
+	<body style="background-image:url('im12.jpeg')">
+	<div class="content">
+	<form action="update.php" method="post" onsubmit="return validation()">
+	<table align="justify">
+	<h3>CHANGE NOMINEE:</h3>
+
+	        <tr>
+	<td>POLICYID:</td><td><input type="text" placeholder="POLICY ID" name="pid" /></td></tr>
+	
+	
+	<tr>
+	<td>Name:</td>
+	</tr>
+        
+	<tr>
+	<td>First Name:</td><td><input type="text" placeholder="Fname" name="cfname" /></td>
+	<td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Last Name:</td><td>&nbsp &nbsp &nbsp &nbsp &nbsp<input type="text" placeholder="Lname" name="clname" /></td>
+	</tr>
+	<tr>
+	<td>gender:</td><td><input type="radio" name="cgender" value="male" />male
+	<input type="radio" name="cgender" value="female" checked/>female</td>
+	<td>&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbspAge:</td><td>&nbsp &nbsp &nbsp &nbsp &nbsp<input type="text" placeholder="age" pattern="[0-9]{2}" name="cage" /></td>
+	</tr>
+	<tr>
+	<td>Residential Address:
+	<td>
+	</tr>
+	<tr>
+	<td>Street/lane:</td><td><input type="text" placeholder="street/lane" name="cstreet" /></td>
+	<td>&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbspCity/Town:</td><td>&nbsp &nbsp &nbsp &nbsp &nbsp<input type="text" placeholder="city" name="ccity" /></td>
+	</tr>
+	<tr>
+	<td>Pincode:</td><td><input type="text" pattern="[0-9]{6}" placeholder="six digit pincode" name="cpincode" /></td>
+	<td>&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbspphone:</td><td>&nbsp &nbsp &nbsp &nbsp &nbsp<input type="text" pattern="[0-9]{10}" placeholder="phone" name="cphone" /></td>
+	</tr>
+	<tr>
+	<td>Relationship Type:</td><td><input type="text" placeholder="relation" name="crelation" /></td>
+	</tr>
+	<tr>
+	
+	</tr>
+	
+	</table>
+<tr></tr><tr></tr<tr></tr<tr></tr<tr></tr>
+<input type="checkbox" required />I agree with the terms and conditions of the company
+	<br>
+	<tr></tr<tr></tr<tr></tr<tr></tr<tr></tr>
+	&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp<input type="submit" value="SUBMIT" />
+
+	</form>
+	</div>
+	</body>
+	
+	</html>

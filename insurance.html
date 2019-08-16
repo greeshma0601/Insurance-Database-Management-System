@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pic.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Insuranz Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body style="background-color:whitesmoke;">
+
+
+    <div class="navbar">
+        <div id="navbar-left">
+            <a href="#default" id="logo"><span style="color:blue;font-family:verdana;font-size: 200%;">I</span><span
+                    style="font-family:verdana;font-size: 200%;">nsuranz</span></a>
+
+        </div>
+        <a href="agentregistration.html" target="_blank">AGENT REGISTRATION</a>
+        <a href="login.html" target="_blank">LOGIN</a>
+        <a href="register.html" target="_blank">REGISTER</a>
+
+
+        <a href="aboutus.html" >ABOUT US</a>
+        <a href="services.html" >SERVICES</a>
+        <a class="active" href="insurance.html">HOME</a>
+
+    </div>
+    <div class="main">
+
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+
+                <div id="image"> <img src="i1.jpg" /></div>
+                <div class="text">Insuring Our Trust to Protect the Future</div>
+            </div>
+
+            <div class="mySlides fade">
+
+                <div id="image"> <img src="i5.jpeg" /></div>
+                <div class="text">Looking for clear & simple Life Insurance,then this the right place for you!!</div>
+            </div>
+
+            <div class="mySlides fade">
+
+                <div id="image"> <img src="i4.jpg" /></div>
+                <div class="text">Insurance that works for you</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+        <h1 class="h">Welcome to our Insurance Company</h1>
+        <p>WANT TO KNOW ABOUT COMPANY</p>
+        <h1><b>We are Insurance Company</b></h1>
+        <p>Insurance sector has shown tremendous growth in the recent years. Now, this sector has 24 Life Insurance and 24 General Insurance companies which offer various innovative products keeping in mind the different needs of people. Most of these companies
+            have entered the market in collaboration with International firms.
+            <br><br> Our Company has come up with a bundle of policies which have their own pros and cons. Every investor has his/her own needs, risk appetite, future goals and budget. As per these factors, a plan useless for one can be the best for another.
+            <br><br> We have been market leaders in India in Non-Life business for more than 10 years. We are the only direct insurer in India rated A-(Excellent) by AM BEST Company since 20017. We have been rated AAA/Stable by CRISIL since 2014, indicating
+            that the Company has the highest degree of Financial Strength to honour its Policyholder's obligations. We have been leading the market, apart from premium, in reserves & net worth for many years.
+
+        </p>
+        <br>
+        <br>
+        <div class="clearfix">
+            <div class="box" style="background-color:#bbb">
+                <h2>How it works</h2>
+                <p>Insuranz reverses the traditional insurance model. We treat the premiums you pay as if it's your money, not ours. With Insuranz, everything becomes simple and transparent. We take a flat fee, pay claims super fast, and give back what’s
+                    left to causes you care about.*</p>
+            </div>
+            <div class="box" style="background-color:#ccc">
+                <h2>Advantages</h2>
+                <ul style="list-style-type:circle">
+                    <li>Death benefits are generally income-tax-free to the beneficiary.</li>
+                    <li>Cash values grow tax deferred during the insured’s lifetime.</li>
+                    <li>Policy loans are income tax free.</li>
+                    <li>Cash value withdrawals are treated on a first-in-first-out (FIFO) basis, therefore cash value withdrawals up to the total premiums paid are generally income-tax free.</li>
+                </ul>
+            </div>
+
+        </div>
+        <br>
+        <div>
+            <p id="hd1">WE ARE DEDICATED FIRM</p>
+            <p id="hd2">Why Choose Us?</p>
+        </div>
+        <br>
+        <br>
+        <button class="tablink" onclick="openPage('Home', this, 'blue')">No Claim Bonus</button>
+        <button class="tablink" onclick="openPage('News', this, 'blue')" id="defaultOpen">Our Philosophy</button>
+        <button class="tablink" onclick="openPage('Contact', this, 'blue')">24/7 Contact</button>
+        <button class="tablink" onclick="openPage('About', this, 'blue')">Other Benefits</button>
+
+        <div id="Home" class="tabcontent">
+            <h3>Our Philosophy</h3>
+            <p>If you don’t file a claim during the policy’s year-long tenure, you’re eligible for a bonus. The bonus could be a higher sum insured (up to 50 percent) or a discount in premium during the annual renewal. Insurers may also offer a cumulative
+                bonus instead for every no-claim year. Check for this benefit during a year in which you don’t file any claims.
+            </p>
+        </div>
+
+        <div id="News" class="tabcontent">
+            <h3>Our Strategy</h3>
+            <p>We employ a multi-faceted strategy that includes prudent organic and acquisition growth, conservative underwriting, pricing discipline, superior technological capabilities, efficient operations and conservative investing. This strategy allows
+                us to achieve our longstanding goal to outperform the property and casualty insurance industry in terms of service and profitability.</p>
+            <h3>Our Insurance Products</h3>
+            <p>We’re committed to consistently delivering excellent insurance coverage and competitive prices. We provide an outstanding combination of price and product, often providing qualified customers added insurance protection that is either not offered
+                by other insurance companies or only available at an additional charge.</p>
+        </div>
+
+        <div id="Contact" class="tabcontent">
+            <h3>24/7 Contact</h3>
+            <h3> HOW CAN WE HELP YOU?</h3>
+
+            <p>Your questions and comments are important to us. That's why we provide you with many quick and convenient ways to contact Allstate.</p>
+            <h3>PHONE</h3>
+            <p>You have 24/7 access to Insuranz's team of insurance professionals. Whether you need help with claims, are waiting for a fax or just want the answer to a question, you can always reach us at
+            </p>
+            <p>1-877-810-2920</p>
+
+
+
+            <h3>ONLINE</h3>
+            <p>To reach Insuranz online, send an email us at insuranz@gmail.com . You can also access your policy information, pay bills, file a claim and much more when you log in to My Account.</p>
+
+
+        </div>
+
+        <div id="About" class="tabcontent">
+            <h3>About Us</h3>
+            <ul style="list-style-type:circle">
+                <li>Provides bodily injury coverage
+
+                </li>
+                <li>Helps minimise the financial losses</li>
+                <li>Attendant Allowance</li>
+                <li>Free Health Checku</li>
+                <li> Expenses Related to Organ Donor</li>
+                <li>Aids in risk-sharing
+
+                </li>
+
+            </ul>
+        </div>
+        <br>
+        <footer>
+            <div class="footer">
+                <p id="ft">Powered by <a href="#">Insuranz</a></p>
+                <a href="#"><i class="fa fa-facebook-official"></i></a>
+                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-flickr"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+
+                <p class="w3-medium">
+            </div>
+        </footer>
+
+    </div>
+    <br>
+
+
+    <script>
+        function openPage(pageName, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>
